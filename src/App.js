@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -32,15 +32,14 @@ function App() {
       }
   }
   return (
-    <>
+    <section>
   <Navbar title="TextUtils" about="About" mode={mode} toggleMode={toggleMode}/>
   <Alerts alert={alert}/>
   <div className='container'>
   <TextForm heading='Write Your Text Below' mode={mode} showAlert={showAlert}/>
   </div>
-
-    </>
-  );
+    </section>
+ );
 }
 
 export default App;

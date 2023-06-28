@@ -36,7 +36,7 @@ export default function TextForm(props) {
     }
     const[text,setText]=useState('');
   return (
-    <>
+    <section>
     <div className='container my-3' style={{color:props.mode==='light'?'black':'white'}}>
     <h1>{props.heading}</h1>
     <div className=" mb-3" >
@@ -58,6 +58,6 @@ export default function TextForm(props) {
       <h2>Text Preview</h2>
       <p>{text.length>0?text:'Your text will be previewed here'}</p>
     </div>
-    </>
+    </section>
    )
 }
